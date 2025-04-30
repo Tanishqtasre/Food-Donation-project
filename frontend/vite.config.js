@@ -21,9 +21,8 @@ export default defineConfig({
     },
   },
   build: {
-    commonjsOptions: {
-      transformMixedEsModules: true,
-    },
+    outDir: 'dist',
+    sourcemap: true,
     rollupOptions: {
       output: {
         manualChunks: {
@@ -40,5 +39,6 @@ export default defineConfig({
       '@emotion/react',
       '@emotion/styled',
     ],
+    exclude: ['canvas'],
   },
 })
