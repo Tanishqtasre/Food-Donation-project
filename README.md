@@ -161,4 +161,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - Thanks to all contributors
-- Special thanks to the open-source community 
+- Special thanks to my teammates(Abhishek,Tanishq and Tamanna)
