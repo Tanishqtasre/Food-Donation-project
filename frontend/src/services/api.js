@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = process.env.NODE_ENV === 'production' 
+  ? 'https://sneh-food-donation.onrender.com/api'
+  : 'http://localhost:5000/api';
 
 // Create axios instance for regular requests
 const api = axios.create({
@@ -137,11 +139,11 @@ export const userAPI = {
 
 // Food Donation API
 export const foodDonationAPI = {
-  createDonation: (donationData) => api.post('/donations', donationData),
-  getDonations: (params) => api.get('/donations', { params }),
-  getMyDonations: () => api.get('/donations/my'),
-  updateDonation: (id, donationData) => api.put(`/donations/${id}`, donationData),
-  deleteDonation: (id) => api.delete(`/donations/${id}`),
+  createDonation: (donationData) => fileUploadApi.post('/food-donations', donationData),
+  getDonations: (params) => api.get('/food-donations', { params }),
+  getMyDonations: () => api.get('/food-donations/my'),
+  updateDonation: (id, donationData) => api.put(`/food-donations/${id}`, donationData),
+  deleteDonation: (id) => api.delete(`/food-donations/${id}`),
 };
 
 // Organization API
