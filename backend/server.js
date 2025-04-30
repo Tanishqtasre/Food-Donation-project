@@ -40,7 +40,8 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'https://sneh-food-donation.vercel.app',
-    'https://frontend-kappa-flame-31.vercel.app'
+    'https://frontend-kappa-flame-31.vercel.app',
+    'https://sneh-food-donation-frontend.vercel.app'
   ],
   credentials: true
 }));

@@ -3,7 +3,7 @@ import axios from 'axios';
 const API = axios.create({
   baseURL: process.env.NODE_ENV === 'production' 
     ? 'https://sneh-food-donation-backend.onrender.com' 
-    : 'http://localhost:3000',
+    : 'http://localhost:5000',
   withCredentials: true
 });
 
