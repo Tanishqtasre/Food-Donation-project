@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: sneh-food-donation-backend
+    env: node
+    branch: master
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: JWT_EXPIRE
+        value: 30d
+      - key: FRONTEND_URL
+        value: https://frontend-kappa-flame-31.vercel.app
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false 

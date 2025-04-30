@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <!-- Background circle -->
+  <circle cx="500" cy="500" r="500" fill="#F5E6D3"/>
+  
+  <!-- Main content group -->
+  <g fill="#8B4513">
+    <!-- Heart -->
+    <path d="M500 300 L550 350 C600 300 650 350 550 450 L500 400 L450 450 C350 350 400 300 450 350 L500 300"/>
+    
+    <!-- Bowl with rice -->
+    <path d="M350 400 C350 400 500 500 650 400 C650 400 550 550 500 550 C450 550 350 400 350 400"/>
+    
+    <!-- Devanagari text स्नेह -->
+    <text x="500" y="700" font-family="Arial" font-size="120" text-anchor="middle" font-weight="bold">स्नेह</text>
+  </g>
+</svg> 
