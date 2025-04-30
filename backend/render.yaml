@@ -3,6 +3,7 @@ services:
     name: sneh-food-donation-backend
     env: node
     branch: master
+    rootDir: backend
     buildCommand: npm install
     startCommand: node server.js
     envVars:
